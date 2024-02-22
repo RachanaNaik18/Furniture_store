@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark nav1">
         <div class="container-fluid">
             <a class="navbar-brand head1" href="#">colorlib</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -53,7 +53,7 @@
         </div>
     </nav>
 
-    <nav class="navbar navbar-expand-lg nav2">
+    <nav class="navbar navbar-expand-lg nav2 fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <div class="icon">
@@ -74,16 +74,16 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse nav2" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#main">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Products">Product</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="#best_prd" role="button" data-bs-toggle="dropdown"
+                        <a class="nav-link" href="#best_furniture" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">About
                         </a>
 
@@ -92,10 +92,10 @@
                         <a class="nav-link " aria-disabled="true" href="#Prd_like">Page</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-disabled="true">Blog</a>
+                        <a class="nav-link " aria-disabled="true" href="#topick">Blog</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " aria-disabled="true">Contact</a>
+                        <a class="nav-link " aria-disabled="true" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -105,28 +105,37 @@
                     <li class="nav-item">
                         <a class="nav-link " aria-disabled="true">My Account</a>
                     </li>
-                    <li>
+                    <li class="d-flex">
                         <a class="nav-link " aria-disabled="true"><img src="img/bag.png" alt="bag" width="23"
                                 height="25"></a>
-                        <div id="amt" class="cart">0</div>
+                        <div id="amt" class="cart text-center">0</div>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="contain d-flex">
-        <div class="main_container">
+    <div class="contain d-flex" id="main">
+        <div class="main_container text-center">
             <div class="discount_container">
-
+                <div class="card text-bg-light mb-3 card_discount" style="max-width: 40rem;">
+                    <h5 class="card-title">70% SALE OFF</h5>
+                    <div class="card-header"><h1>FURNITURE AT COST</h1></div>
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-info">DISCOVER MORE</button>
+                    </div>
+                  </div>
             </div>
         </div>
         <div class="sec_container"></div>
     </div>
 
-    <div class="container products text-center">
+    <div class="container products text-center" id="Products">
         <div class="row mp-5">
-            <h1 id="Products">POPULAR PRODUCTS</h1>
+            <h1 >POPULAR PRODUCTS</h1>
         </div>
         <div class="row mt-5 justify-content-center">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe neque soluta obcaecati. Magnam, doloremque.
@@ -147,9 +156,9 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="images_Container d-flex row">
-                            <img src="img/sofa3.png" class="d-block w-30 col-lg-4" width="30%" height="60%" alt="...">
-                            <img src="img/sofa1.png" class="d-block w-30  col-lg-4" width="30%" height="60%" alt="...">
-                            <img src="img/sofa2.png" class="d-block w-30  col-lg-4" width="30%" height="60%" alt="...">
+                            <img src="img/sofa3.png" class="d-block w-30 col-lg-4 img_slide1" width="30%" height="60%" alt="...">
+                            <img src="img/sofa1.png" class="d-block w-30  col-lg-4 img_slide1" width="30%" height="60%" alt="...">
+                            <img src="img/sofa2.png" class="d-block w-30  col-lg-4 img_slide1" width="30%" height="60%" alt="...">
                         </div>
 
                         <div class="carousel-caption d-none d-md-block">
@@ -159,9 +168,9 @@
                     </div>
                     <div class="carousel-item">
                         <div class="images_Container d-flex row">
-                            <img src="img/chair1.png" class="d-block w-30 col-lg-4" width="30%" height="50%" alt="...">
-                            <img src="img/chair2.png" class="d-block w-30 col-lg-4" width="20%" height="30%" alt="...">
-                            <img src="img/chair3.png" class="d-block w-30 col-lg-4" width="30%" height="50%" alt="...">
+                            <img src="img/chair1.png" class="d-block w-30 col-lg-4 img_slide2" width="30%" height="50%" alt="...">
+                            <img src="img/chair2.png" class="d-block w-30 col-lg-4 img_slide2" width="20%" height="30%" alt="...">
+                            <img src="img/chair3.png" class="d-block w-30 col-lg-4 img_slide2" width="30%" height="50%" alt="...">
                         </div>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Chair</h5>
@@ -170,9 +179,9 @@
                     </div>
                     <div class="carousel-item">
                         <div class="images_Container d-flex row">
-                            <img src="img/table1.png" class="d-block w-30 col-lg-4" width="30%" height="50%" alt="...">
-                            <img src="img/table2.png" class="d-block w-30 col-lg-4" width="30%" height="50%" alt="...">
-                            <img src="img/table3.png" class="d-block w-30 col-lg-4" width="30%" height="50%" alt="...">
+                            <img src="img/table1.png" class="d-block w-30 col-lg-4 img_slide3" width="30%" height="50%" alt="...">
+                            <img src="img/table2.png" class="d-block w-30 col-lg-4 img_slide3" width="30%" height="50%" alt="...">
+                            <img src="img/table3.png" class="d-block w-30 col-lg-4 img_slide3" width="30%" height="50%" alt="...">
                         </div>
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Table</h5>
@@ -205,13 +214,13 @@
         </div>
     </div>
 
-    <div class="card mb-3 card_img">
+    <div class="card mb-3 card_img" id="best_furniture">
         <div class="row g-0">
             <div class="col-lg-8">
                 <img src="img/bd2.png" class="img-fluid rounded-start" width="100%" alt="...">
             </div>
             <div class="col-lg-4">
-                <div class="card-body card_img text-center mt-5" id="best_prd">
+                <div class="card-body card_img text-center mt-5">
                     <h1 class="card-title">BEST FURNITURE <br> MANUFACTURER</h1>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quam
                         recusandae cumque quas fugit inventore neque hic ea dolor architecto quia sint beatae
@@ -295,7 +304,7 @@
         </div>
     </div>
 
-    <div class="container text-center">
+    <div class="container text-center" id="topick">
         <div class="card_heading text-center mt-3">
             <h1 class="mt-5" id="">TOP PICK</h1>
             <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita non nihil, architecto cumque quia et
@@ -338,7 +347,7 @@
         </div>
     </div>
 
-    <div class="contact mt-5">
+    <div class="contact mt-5" id="contact">
         <div class="background row">
             <div class="card border-info mb-3 col-lg-3 text-center bg-transparent contact_info"
                 style="max-width: 18rem;">
@@ -425,9 +434,9 @@
                     <div class="col-lg-2 link_cards">
                         <div class="card mb-3 bg-transparent ml-5" style="max-width: 18rem;">
                             <div class="card-header bg-transparent">
-                                <h3>
+                                <h5 style="color: white;">
                                     Shop Category
-                                </h3>
+                                </h5>
                             </div>
                             <div class="card-body">
                                 <a href="">
@@ -479,6 +488,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
             crossorigin="anonymous"></script>
+            <script src="style.js"></script>
 </body>
 
 </html>
