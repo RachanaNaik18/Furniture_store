@@ -193,12 +193,8 @@ border-radius: 20px;
     .main_container{
         width: 100%;
     }
-    .nav1, .sec_container{
-        display: none;
-    }
-    .nav2{
-        background-color: lightcoral;
-        width: 100%;
+ .sec_container, .nav1{
+         display: none; 
     }
     .contain .main_container{
         min-height: 100vh;
@@ -208,10 +204,10 @@ border-radius: 20px;
         width: 70%;
         height: 30%;
     }
+
+    .contact {
+        display: flex;
+        overflow: scroll;
+    }
 }
 
-@media screen and (max-width:768px) {
-    
-    
-    
-}
